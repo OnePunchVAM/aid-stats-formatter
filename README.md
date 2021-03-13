@@ -14,7 +14,7 @@ const statsFormatterConfig = {
 
 ![Stats Formatter in Action](https://media.discordapp.net/attachments/717764081058185316/818082296711479306/unknown.png?width=1610&height=846)
 
-# Usage
+## Usage
 
 This is meant to be used in conjunction with other scripts that actually "do" something with the `state.displayStats` functionality built within AID.
 
