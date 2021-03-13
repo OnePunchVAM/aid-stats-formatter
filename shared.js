@@ -22,13 +22,13 @@ class StatsFormatterPlugin {
   }
 
   execute(options = {}) {
+    // Don't run if disabled
+    if (this.state.isDisabled) return
+
     // Set defaults
     options.order = options.order || []
     options.alignVertical = !!options.alignVertical
     options.truncateLabels = !!options.truncateLabels
-
-    // Don't run if disabled
-    if (this.state.isDisabled) return
 
     // Detect new stats and add them to state
     const existingKeys = this.state.displayStats.map(s => s.key)
