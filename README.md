@@ -20,4 +20,8 @@ This is meant to be used in conjunction with other scripts that actually "do" so
 
 If you are creating your own script that modifies the `state.displayStats` array, consider using this plugin to help you display it nicely.
 
-To use, simply call the `statsFormatterPlugin.execute(statsFormatterConfig)` after you have made changes to `state.displayStats`.
+To use, you simply run the `execute` function after you have made changes to `state.displayStats`:
+
+```js
+statsFormatterPlugin.execute(statsFormatterConfig)
+```
